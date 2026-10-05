@@ -14,7 +14,6 @@ import {
 import { CtaBand, IconRow, PageHero, SectionHeading } from "@/components/ui";
 
 // NOT: Bu sayfa PDF tasarım setinde yoktu; mevcut stile göre oluşturuldu.
-// Sertifika ve ölçüm cihazı bilgileri firmadan alınıp güncellenmelidir.
 
 export const metadata: Metadata = {
   title: "Kalite",
@@ -28,15 +27,6 @@ const process = [
   { icon: ScanSearch, title: "Proses İçi Kontrol", text: "Üretim süresince periyodik ölçümlerle toleranslar sürekli takip edilir." },
   { icon: PackageCheck, title: "Final Kontrol", text: "Sevkiyat öncesi son kontrol ve uygun ambalajlama ile teslimata hazırlanır." },
   { icon: Truck, title: "Sevkiyat", text: "Planlanan termin süresine uygun, güvenli ve zamanında teslimat." },
-];
-
-const equipment = [
-  "Dijital kumpas ve mikrometreler",
-  "Mastar ve diş kontrol takımları",
-  "Profil projeksiyon cihazı",
-  "Yüzey pürüzlülük ölçümü",
-  "Sertlik ölçüm cihazı",
-  "Kalibrasyonlu ölçüm ekipmanları",
 ];
 
 export default function QualityPage() {
@@ -74,32 +64,6 @@ export default function QualityPage() {
               </li>
             ))}
           </ol>
-        </div>
-      </section>
-
-      <section className="border-b border-line">
-        <div className="container-x grid gap-10 py-20 lg:grid-cols-2">
-          <div>
-            <SectionHeading line title="Ölçüm ve Kontrol Ekipmanları" />
-            <ul className="-mt-2 grid gap-3 sm:grid-cols-2">
-              {equipment.map((e) => (
-                <li key={e} className="card flex items-center gap-3 px-5 py-4 text-sm">
-                  <Ruler className="h-4 w-4 shrink-0 text-copper" /> {e}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <SectionHeading line title="Belgelerimiz" />
-            <div className="-mt-2 grid grid-cols-2 gap-4">
-              {[1, 2].map((n) => (
-                <div key={n} className="card flex aspect-[3/4] flex-col items-center justify-center gap-3 p-6 text-center text-sm text-muted">
-                  <Award className="h-10 w-10 text-copper" strokeWidth={1.2} />
-                  Sertifika görseli eklenecek
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 

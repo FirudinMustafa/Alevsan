@@ -1,6 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   // Siteyi geliştirme sırasında yerel ağdaki cihazlardan (telefon vb.) açabilmek için
   allowedDevOrigins: ["192.168.1.199"],
   experimental: {

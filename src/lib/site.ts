@@ -31,9 +31,9 @@ export const nav = [
 
 export const productCategories = [
   { slug: "percin-somunlar", title: "Perçin Somunlar", text: "Farklı ölçü ve malzemelerde perçin somun üretimi.", image: "/images/cat-percin-somun.webp" },
-  { slug: "pirinc-insertler", title: "Pirinç Insertler", text: "Yüksek mukavemetli pirinç insert çözümleri.", image: "/images/cat-pirinc-insert.webp" },
-  { slug: "somunlar", title: "Somunlar", text: "Standart ve özel somun üretimi.", image: "/images/cat-somun.webp" },
-  { slug: "rekorlar", title: "Rekorlar", text: "Çeşitli bağlantı rekorları ve özel üretimler.", image: "/images/cat-rekor.webp" },
+  { slug: "pirinc-insertler", title: "Pirinç Insertler", text: "Yüksek mukavemetli pirinç insert çözümleri.", image: "/images/cat-pirinc-insert-v2.webp" },
+  { slug: "somunlar", title: "Somunlar", text: "Standart ve özel somun üretimi.", image: "/images/cat-somun-v2.webp" },
+  { slug: "rekorlar", title: "Rekorlar", text: "Çeşitli bağlantı rekorları ve özel üretimler.", image: "/images/cat-rekor-v2.webp" },
   { slug: "tornalanmis-parcalar", title: "Tornalanmış Parçalar", text: "Hassas CNC tornalama ile özel parça üretimi.", image: "/images/cat-tornalanmis.webp" },
   { slug: "ozel-baglanti-elemanlari", title: "Özel Bağlantı Elemanları", text: "Farklı sektörlere yönelik özel bağlantı çözümleri.", image: "/images/cat-ozel-baglanti.webp" },
   { slug: "cnc-ozel-parcalar", title: "CNC Özel Parçalar", text: "Teknik resme göre hassas CNC işleme.", image: "/images/cat-cnc-ozel.webp" },
@@ -43,16 +43,16 @@ export const productCategories = [
 export const featuredProducts = [
   { title: "Perçin Somunlar", text: "Farklı ölçü ve formlarda özel üretim.", image: "/images/prod-percin-somun-v2.webp" },
   { title: "Özel Somunlar", text: "Standart dışı ölçülerde somun imalatı.", image: "/images/prod-ozel-somun.webp" },
-  { title: "Bağlantı Rekorları", text: "Hidrolik ve pnömatik bağlantı elemanları.", image: "/images/prod-rekor-v2.webp" },
+  { title: "Bağlantı Rekorları", text: "Hidrolik ve pnömatik bağlantı elemanları.", image: "/images/prod-rekor-v3.webp" },
   { title: "Özel Tornalanmış Parçalar", text: "Numuneye veya teknik resme göre hassas imalat.", image: "/images/prod-tornalanmis-v2.webp" },
 ];
 
 export const sampleWorks = [
   { title: "Perçin Somun Çeşitleri", text: "Farklı ölçü ve formlar", image: "/images/sample-1-v2.webp" },
-  { title: "Pirinç Insert Uygulamaları", text: "Yüksek tutunma performansı", image: "/images/sample-2.webp" },
+  { title: "Pirinç Insert Uygulamaları", text: "Yüksek tutunma performansı", image: "/images/sample-2-v2.webp" },
   { title: "Tornalanmış Özel Parça", text: "Hassas toleranslarda üretim", image: "/images/sample-3.webp" },
   { title: "CNC Özel Üretimler", text: "Teknik resme özel çözümler", image: "/images/sample-4.webp" },
-  { title: "Rekor ve Bağlantı Elemanları", text: "Farklı sektörler için üretim", image: "/images/sample-5-v2.webp" },
+  { title: "Rekor ve Bağlantı Elemanları", text: "Farklı sektörler için üretim", image: "/images/sample-5-v3.webp" },
 ];
 
 export const machines = [

@@ -33,7 +33,7 @@ const timeline = [
 const reasons = [
   { icon: Crosshair, title: "Yüksek Hassasiyet", text: "Mikron seviyesinde işleme hassasiyeti ile istikrarlı kalite.", image: "/images/why-1.webp" },
   { icon: Layers, title: "Seri Üretim", text: "Yüksek adetli üretimlerde istikrarlı kalite ve verimlilik.", image: "/images/why-2.webp" },
-  { icon: Settings, title: "Özel İmalat", text: "Farklı sektörlere yönelik özel parça üretim kabiliyeti.", image: "/images/why-3.webp" },
+  { icon: Settings, title: "Özel İmalat", text: "Farklı sektörlere yönelik özel parça üretim kabiliyeti.", image: "/images/why-3-v2.webp" },
   { icon: Handshake, title: "Güvenilir İş Ortaklığı", text: "Uzun vadeli, sürdürülebilir ve güvene dayalı çözümler.", image: "/images/why-4.webp" },
   { icon: ShieldCheck, title: "Kalite Kontrol", text: "Her aşamada titiz kontrol süreçleri ve ölçüm garantisi.", image: "/images/why-5.webp" },
   { icon: Truck, title: "Zamanında Teslimat", text: "Planlı üretim ve güçlü operasyon yönetimi ile zamanında teslim.", image: "/images/why-6.webp" },

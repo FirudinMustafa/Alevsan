@@ -19,7 +19,7 @@ export function Logo() {
 export function LogoFull({ className = "w-56" }: { className?: string }) {
   return (
     <Link href="/" aria-label="Alevsan – Ana Sayfa" className="inline-block">
-      <Image src="/brand/alevsan-logo.png" alt="Alevsan Torna Sanayi ve Ticaret Ltd. Şti. – Çeliğe işlenen sanat" width={971} height={905} className={`h-auto ${className}`} />
+      <Image src="/brand/alevsan-logo-ac.png" alt="Alevsan Torna Sanayi ve Ticaret Ltd. Şti. – Çeliğe işlenen sanat" width={971} height={905} className={`h-auto ${className}`} />
     </Link>
   );
 }

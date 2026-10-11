@@ -42,7 +42,7 @@ export default function ProductsPage() {
           <SectionHeading eyebrow="Ürün Kategorileri" action={{ href: "/teklif-al", label: "Ürününüz için teklif alın" }} />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {productCategories.map((c) => (
-              <ImageCard key={c.slug} title={c.title} text={c.text} image={c.image} href="/teklif-al" aspect="aspect-[4/3]" />
+              <ImageCard key={c.slug} title={c.title} text={c.text} image={c.image} gallery={c.gallery} href="/teklif-al" aspect="aspect-[4/3]" />
             ))}
           </div>
         </div>

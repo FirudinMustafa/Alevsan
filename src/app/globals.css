@@ -273,3 +273,13 @@ body {
   .emblem-intro-cw, .emblem-intro-ccw, .emblem-flame { animation: none; }
   .emblem-spin-cw, .emblem-spin-ccw { animation-play-state: paused !important; }
 }
+
+/* ---------- Ürün fotoğraf görüntüleyici (ProductGallery) ---------- */
+.product-gallery::backdrop {
+  background: rgb(10 10 11 / 0.94);
+  backdrop-filter: blur(4px);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}

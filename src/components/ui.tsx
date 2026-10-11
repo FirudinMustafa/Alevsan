@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { CardBody } from "./CardBody";
+import { ProductGallery } from "./ProductGallery";
 
 export type IconItem = { icon: LucideIcon; label: string; text?: string };
 
@@ -99,12 +101,13 @@ export function SectionHeading({
   );
 }
 
-/** Görselli kart: ürün, örnek üretim, makine. */
+/** Görselli kart: ürün, örnek üretim, makine. Birden fazla fotoğrafı varsa tıklanınca kaydırmalı görüntüleyici açılır. */
 export function ImageCard({
   title,
   text,
   image,
   href,
+  gallery,
   aspect = "aspect-[16/10]",
   titleSize = "text-lg",
 }: {
@@ -112,30 +115,14 @@ export function ImageCard({
   text: string;
   image: string;
   href?: string;
+  gallery?: string[];
   aspect?: string;
   titleSize?: string;
 }) {
-  const body = (
-    <>
-      <div className={`relative ${aspect} overflow-hidden`}>
-        <Image
-          src={image}
-          alt={title}
-          fill
-          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-          className="object-cover transition duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface to-transparent" />
-      </div>
-      <div className="flex flex-1 items-end justify-between gap-3 p-5">
-        <div>
-          <h3 className={`font-display ${titleSize} font-semibold`}>{title}</h3>
-          <p className="mt-1.5 text-sm text-muted">{text}</p>
-        </div>
-        {href && <ArrowRight className="h-4 w-4 shrink-0 text-copper transition group-hover:translate-x-1" />}
-      </div>
-    </>
-  );
+  if (gallery && gallery.length > 1) {
+    return <ProductGallery title={title} text={text} image={image} images={gallery} aspect={aspect} titleSize={titleSize} />;
+  }
+  const body = <CardBody title={title} text={text} image={image} aspect={aspect} titleSize={titleSize} showArrow={!!href} />;
   const cls = "card group flex flex-col overflow-hidden transition hover:border-copper/60";
   return href ? (
     <Link href={href} className={cls}>

@@ -15,7 +15,7 @@ export default function ProductsPage() {
   return (
     <>
       <PageHero
-        title="Üretimler"
+        title="Ürünler"
         image="/images/hero-products.webp"
         subtitle={
           <>

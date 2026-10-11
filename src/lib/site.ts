@@ -35,10 +35,10 @@ export const galleries = {
   pirincInsert: gallery("pirinc-insert", 4),
   rekor: gallery("rekor", 4),
   percinSomun: gallery("percin-somun", 2),
-  tornalanmis: gallery("tornalanmis", 2),
+  tornalanmis: gallery("tornalanmis", 5),
   ozelSomun: gallery("ozel-somun", 3),
   ozelBaglanti: gallery("ozel-baglanti", 4),
-  cncOzel: gallery("cnc-ozel", 3),
+  cncOzel: gallery("cnc-ozel-v2", 3),
 };
 
 export const productCategories = [
@@ -46,9 +46,9 @@ export const productCategories = [
   { slug: "pirinc-insertler", title: "Pirinç Insertler", text: "Yüksek mukavemetli pirinç insert çözümleri.", image: "/images/cat-pirinc-insert-v2.webp", gallery: galleries.pirincInsert },
   { slug: "somunlar", title: "Somunlar", text: "Standart ve özel somun üretimi.", image: "/images/cat-somun-v2.webp", gallery: [...galleries.ozelSomun, galleries.rekor[3]] },
   { slug: "rekorlar", title: "Rekorlar", text: "Çeşitli bağlantı rekorları ve özel üretimler.", image: "/images/cat-rekor-v2.webp", gallery: galleries.rekor },
-  { slug: "tornalanmis-parcalar", title: "Tornalanmış Parçalar", text: "Hassas CNC tornalama ile özel parça üretimi.", image: "/images/cat-tornalanmis.webp", gallery: galleries.tornalanmis },
+  { slug: "tornalanmis-parcalar", title: "Tornalanmış Parçalar", text: "Hassas CNC tornalama ile özel parça üretimi.", image: "/images/cat-tornalanmis-v2.webp", gallery: galleries.tornalanmis },
   { slug: "ozel-baglanti-elemanlari", title: "Özel Bağlantı Elemanları", text: "Farklı sektörlere yönelik özel bağlantı çözümleri.", image: "/images/cat-ozel-baglanti-v2.webp", gallery: galleries.ozelBaglanti },
-  { slug: "cnc-ozel-parcalar", title: "CNC Özel Parçalar", text: "Teknik resme göre hassas CNC işleme.", image: "/images/cat-cnc-ozel-v2.webp", gallery: galleries.cncOzel },
+  { slug: "cnc-ozel-parcalar", title: "CNC Özel Parçalar", text: "Teknik resme göre hassas CNC işleme.", image: "/images/cat-cnc-ozel-v3.webp", gallery: galleries.cncOzel },
   { slug: "diger-ozel-uretimler", title: "Diğer Özel Üretimler", text: "İhtiyacınıza yönelik özel parça üretimleri.", image: "/images/cat-diger-v2.webp" },
 ];
 
@@ -62,8 +62,8 @@ export const featuredProducts = [
 export const sampleWorks = [
   { title: "Perçin Somun Çeşitleri", text: "Farklı ölçü ve formlar", image: "/images/sample-1-v2.webp", gallery: galleries.percinSomun },
   { title: "Pirinç Insert Uygulamaları", text: "Yüksek tutunma performansı", image: "/images/sample-2-v2.webp", gallery: galleries.pirincInsert },
-  { title: "Tornalanmış Özel Parça", text: "Hassas toleranslarda üretim", image: "/images/sample-3.webp" },
-  { title: "CNC Özel Üretimler", text: "Teknik resme özel çözümler", image: "/images/sample-4-v2.webp", gallery: galleries.cncOzel },
+  { title: "Tornalanmış Özel Parça", text: "Hassas toleranslarda üretim", image: "/images/sample-3-v2.webp", gallery: galleries.tornalanmis },
+  { title: "CNC Özel Üretimler", text: "Teknik resme özel çözümler", image: "/images/sample-4-v3.webp", gallery: galleries.cncOzel },
   { title: "Rekor ve Bağlantı Elemanları", text: "Farklı sektörler için üretim", image: "/images/sample-5-v3.webp", gallery: galleries.rekor },
 ];
 

@@ -25,7 +25,7 @@ export default function ContactPage() {
     <>
       <PageHero
         title="İletişim"
-        image="/images/hero-about.webp"
+        image="/images/hero-about-v2.webp"
         subtitle="Projeleriniz, teklif talepleriniz ve tüm sorularınız için bize ulaşın."
       />
 

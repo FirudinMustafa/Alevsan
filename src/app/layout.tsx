@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: "Alevsan Torna",
-    images: ["/images/hero-home.webp"],
+    images: ["/images/hero-home-v2.webp"],
   },
 };
 

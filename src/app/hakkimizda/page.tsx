@@ -44,7 +44,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="Hakkımızda"
-        image="/images/hero-about.webp"
+        image="/images/hero-about-v2.webp"
         subtitle="1971'den bugüne, hassas talaşlı imalat alanında sanayinin güvenilir çözüm ortağıyız."
       >
         <IconRow

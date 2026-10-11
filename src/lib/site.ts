@@ -37,22 +37,22 @@ export const productCategories = [
   { slug: "tornalanmis-parcalar", title: "Tornalanmış Parçalar", text: "Hassas CNC tornalama ile özel parça üretimi.", image: "/images/cat-tornalanmis.webp" },
   { slug: "ozel-baglanti-elemanlari", title: "Özel Bağlantı Elemanları", text: "Farklı sektörlere yönelik özel bağlantı çözümleri.", image: "/images/cat-ozel-baglanti.webp" },
   { slug: "cnc-ozel-parcalar", title: "CNC Özel Parçalar", text: "Teknik resme göre hassas CNC işleme.", image: "/images/cat-cnc-ozel.webp" },
-  { slug: "diger-ozel-uretimler", title: "Diğer Özel Üretimler", text: "İhtiyacınıza yönelik özel parça üretimleri.", image: "/images/cat-diger.webp" },
+  { slug: "diger-ozel-uretimler", title: "Diğer Özel Üretimler", text: "İhtiyacınıza yönelik özel parça üretimleri.", image: "/images/cat-diger-v2.webp" },
 ];
 
 export const featuredProducts = [
-  { title: "Perçin Somunlar", text: "Farklı ölçü ve formlarda özel üretim.", image: "/images/prod-percin-somun.webp" },
+  { title: "Perçin Somunlar", text: "Farklı ölçü ve formlarda özel üretim.", image: "/images/prod-percin-somun-v2.webp" },
   { title: "Özel Somunlar", text: "Standart dışı ölçülerde somun imalatı.", image: "/images/prod-ozel-somun.webp" },
-  { title: "Bağlantı Rekorları", text: "Hidrolik ve pnömatik bağlantı elemanları.", image: "/images/prod-rekor.webp" },
-  { title: "Özel Tornalanmış Parçalar", text: "Numuneye veya teknik resme göre hassas imalat.", image: "/images/prod-tornalanmis.webp" },
+  { title: "Bağlantı Rekorları", text: "Hidrolik ve pnömatik bağlantı elemanları.", image: "/images/prod-rekor-v2.webp" },
+  { title: "Özel Tornalanmış Parçalar", text: "Numuneye veya teknik resme göre hassas imalat.", image: "/images/prod-tornalanmis-v2.webp" },
 ];
 
 export const sampleWorks = [
-  { title: "Perçin Somun Çeşitleri", text: "Farklı ölçü ve formlar", image: "/images/sample-1.webp" },
+  { title: "Perçin Somun Çeşitleri", text: "Farklı ölçü ve formlar", image: "/images/sample-1-v2.webp" },
   { title: "Pirinç Insert Uygulamaları", text: "Yüksek tutunma performansı", image: "/images/sample-2.webp" },
   { title: "Tornalanmış Özel Parça", text: "Hassas toleranslarda üretim", image: "/images/sample-3.webp" },
   { title: "CNC Özel Üretimler", text: "Teknik resme özel çözümler", image: "/images/sample-4.webp" },
-  { title: "Rekor ve Bağlantı Elemanları", text: "Farklı sektörler için üretim", image: "/images/sample-5.webp" },
+  { title: "Rekor ve Bağlantı Elemanları", text: "Farklı sektörler için üretim", image: "/images/sample-5-v2.webp" },
 ];
 
 export const machines = [
@@ -60,44 +60,44 @@ export const machines = [
     title: "CNC Otomatlar",
     count: 7,
     countLabel: "CNC Otomat",
-    image: "/images/m-cnc-otomat.webp",
+    image: "/images/m-cnc-otomat-v2.webp",
     points: ["Yüksek hassasiyetli seri üretim", "Karmaşık geometrilerde çözüm", "Dar toleranslarda stabil üretim"],
   },
   {
     title: "CNC Kayar Makine",
     count: 3,
     countLabel: "CNC Kayar Makine",
-    image: "/images/m-cnc-kayar.webp",
+    image: "/images/m-cnc-kayar-v2.webp",
     points: ["Küçük ve hassas parçalar için ideal", "Yüksek hassasiyetli işleme", "Seri üretime uygun esnek yapı"],
   },
   {
     title: "İndeks Otomatlar",
     count: 55,
     countLabel: "İndeks Otomat",
-    image: "/images/m-indeks.webp",
+    image: "/images/m-indeks-v2.webp",
     points: ["Çok eksenli işleme kabiliyeti", "Yüksek üretim hızı", "Karmaşık parçalar için ideal çözüm"],
   },
   {
     title: "6 Milli Otomatlar",
     count: 5,
     countLabel: "6 Milli Otomat",
-    image: "/images/m-6milli.webp",
+    image: "/images/m-6milli-v2.webp",
     points: ["Aynı anda çoklu işleme", "Yüksek hız ve verimlilik", "Orta ve yüksek hacimli seri üretim"],
   },
   {
     title: "Transfer Makineleri",
     count: 5,
     countLabel: "Transfer Makinesi",
-    image: "/images/m-transfer.webp",
+    image: "/images/m-transfer-v2.webp",
     points: ["Yüksek adetli seri üretim", "Otomatik ve kesintisiz üretim", "Maksimum verimlilik ve tutarlılık"],
   },
 ];
 
 export const homeMachines = [
-  { title: "CNC Otomatlar", text: "Yüksek hassasiyette seri üretim.", image: "/images/mach-cnc-torna.webp" },
-  { title: "CNC Kayar Otomatlar", text: "Küçük çaplı hassas parçalar.", image: "/images/mach-cnc-kayar.webp" },
-  { title: "İndeks Otomatlar", text: "Kompleks parça imalatı.", image: "/images/mach-isleme.webp" },
-  { title: "Transfer Makineleri", text: "Yüksek adetli üretim.", image: "/images/mach-transfer.webp" },
+  { title: "CNC Otomatlar", text: "Yüksek hassasiyette seri üretim.", image: "/images/mach-cnc-torna-v2.webp" },
+  { title: "CNC Kayar Otomatlar", text: "Küçük çaplı hassas parçalar.", image: "/images/mach-cnc-kayar-v2.webp" },
+  { title: "İndeks Otomatlar", text: "Kompleks parça imalatı.", image: "/images/mach-isleme-v2.webp" },
+  { title: "Transfer Makineleri", text: "Yüksek adetli üretim.", image: "/images/mach-transfer-v2.webp" },
 ];
 
 export const sectors = [

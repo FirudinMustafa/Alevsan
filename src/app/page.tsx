@@ -45,7 +45,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden border-b border-line">
         <div className="absolute inset-y-0 right-0 -z-10 w-full md:w-[65%]">
-          <Image src="/images/hero-home.webp" alt="" fill priority sizes="65vw" className="object-cover" />
+          <Image src="/images/hero-home-v2.webp" alt="" fill priority sizes="65vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-ink from-5% via-ink/50 via-30% to-transparent to-60%" />
         <div className="absolute inset-0 bg-ink/60 md:hidden" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
@@ -113,7 +113,7 @@ export default function Home() {
             ))}
           </ul>
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
-            <Image src="/images/about-parts.webp" alt="Alevsan üretimi pirinç ve çelik parçalar" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+            <Image src="/images/about-parts-v2.webp" alt="Alevsan üretimi pirinç ve çelik parçalar" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
           </div>
         </div>
       </section>

@@ -45,7 +45,7 @@ export default function MachinePage() {
     <>
       <PageHero
         title="Makine Parkı"
-        image="/images/hero-machines.webp"
+        image="/images/hero-machines-v2.webp"
         subtitle="Gelişmiş makine parkımız ve modern üretim teknolojimizle, hassas talaşlı imalatta yüksek kalite ve seri üretim kapasitesi sunuyoruz."
       >
         <IconRow

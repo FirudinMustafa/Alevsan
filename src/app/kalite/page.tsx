@@ -34,7 +34,7 @@ export default function QualityPage() {
     <>
       <PageHero
         title="Kalite"
-        image="/images/hero-machines.webp"
+        image="/images/hero-machines-v2.webp"
         subtitle="Hammadde girişinden sevkiyata kadar her aşamada ölçüm ve kontrol; dar toleranslarda istikrarlı kalite."
       >
         <IconRow

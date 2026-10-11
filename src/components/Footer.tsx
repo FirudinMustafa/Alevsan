@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Mail, MapPin, MessageSquare, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, MessageCircle, MessageSquare, Phone } from "lucide-react";
 import { LogoFull } from "./Logo";
 import { company, nav } from "@/lib/site";
 
@@ -31,6 +31,11 @@ export function Footer() {
             <li>
               <a href={company.phoneHref} className="flex items-center gap-3 transition hover:text-copper">
                 <Phone className="h-4 w-4 shrink-0 text-copper" /> {company.phone}
+              </a>
+            </li>
+            <li>
+              <a href={company.whatsappHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 transition hover:text-copper">
+                <MessageCircle className="h-4 w-4 shrink-0 text-copper" /> {company.whatsapp}
               </a>
             </li>
             <li>

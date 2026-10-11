@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const items: { icon: LucideIcon; title: string; value: string; href?: string }[] = [
   { icon: Phone, title: "Telefon", value: company.phone, href: company.phoneHref },
-  { icon: MessageCircle, title: "WhatsApp", value: "Mesaj gönderin", href: company.whatsappHref },
+  { icon: MessageCircle, title: "WhatsApp", value: company.whatsapp, href: company.whatsappHref },
   { icon: Mail, title: "E-posta", value: company.email, href: `mailto:${company.email}` },
   { icon: MapPin, title: "Adres", value: company.address },
   { icon: Clock, title: "Çalışma Saatleri", value: company.workingHours },

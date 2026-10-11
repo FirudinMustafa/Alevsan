@@ -1,5 +1,6 @@
 import { useId } from "react";
 import { gearPath } from "@/lib/gear";
+import letters from "@/lib/emblem-letters.json";
 
 // Logodaki amblem: birbirine geçen iki dişli + bakır alev.
 // Dişli geometrisi AlevsanLogo.jpeg üzerinden ölçüldü: 12 diş, diş dibi r≈103.5,
@@ -9,7 +10,9 @@ const R_BAND = 82;
 const GEAR = gearPath({ rRoot: 103.5, rTip: R_TIP, innerR: R_BAND });
 const LEFT = { x: 140, y: 380 };
 const RIGHT = { x: 385, y: 380 };
-const MESH = { x: (LEFT.x + RIGHT.x) / 2, y: LEFT.y };
+// İç halkanın içi r≈67; harf (100 birimlik glif) bunu taşmadan doldurur
+const LETTER_SCALE = 1.1;
+const MESH ={ x: (LEFT.x + RIGHT.x) / 2, y: LEFT.y };
 const SPARKS = [
   { dx: -70, dy: 95, d: 0 },
   { dx: -30, dy: 120, d: 0.25 },
@@ -30,7 +33,7 @@ export function GearEmblem({ mode, className }: { mode: "loader" | "nav"; classN
   const polish = `${uid}-polish`;
   const spark = `${uid}-spark`;
 
-  const gear = (c: { x: number; y: number }, dir: "cw" | "ccw") => {
+  const gear = (c: { x: number; y: number }, dir: "cw" | "ccw", letter: string) => {
     const maskId = `${uid}-gear-${dir}`;
     return (
       <g>
@@ -47,6 +50,14 @@ export function GearEmblem({ mode, className }: { mode: "loader" | "nav"; classN
         <circle cx={c.x} cy={c.y} r={R_BAND - 2} fill="none" stroke="#141416" strokeWidth="4" />
         <circle cx={c.x} cy={c.y} r={72} fill="none" stroke={`url(#${polish})`} strokeWidth="9" />
         <circle cx={c.x} cy={c.y} r={R_BAND + 1} fill="none" stroke="#ffffff" strokeOpacity="0.25" strokeWidth="1.5" />
+        {/* Harf dişliyle dönmez, hep dik kalır */}
+        <path
+          d={letter}
+          transform={`translate(${c.x} ${c.y}) scale(${LETTER_SCALE})`}
+          fill={`url(#${silver})`}
+          stroke="#141416"
+          strokeWidth={2 / LETTER_SCALE}
+        />
       </g>
     );
   };
@@ -75,8 +86,8 @@ export function GearEmblem({ mode, className }: { mode: "loader" | "nav"; classN
         )}
       </defs>
 
-      {gear(LEFT, "cw")}
-      {gear(RIGHT, "ccw")}
+      {gear(LEFT, "cw", letters.left)}
+      {gear(RIGHT, "ccw", letters.right)}
 
       {mode === "loader" && (
         // Dişlilerin kavrama noktasından sıçrayan talaş kıvılcımları

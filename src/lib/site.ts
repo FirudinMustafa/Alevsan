@@ -1,5 +1,5 @@
 // Firma bilgileri ve site içeriği.
-// NOT: Adres logodan alındı. Telefon, makine sayıları ve listeler tasarımdan alınmış yer tutuculardır;
+// NOT: Adres logodan alındı. Makine sayıları ve listeler tasarımdan alınmış yer tutuculardır;
 // yayın öncesi firmadan teyit edilmelidir.
 
 export const company = {
@@ -8,10 +8,11 @@ export const company = {
   slogan: "Çeliğe işlenen sanat.",
   founded: 1971,
   facilityArea: 800, // m²
-  phone: "+90 (0) 216 000 00 00",
-  phoneHref: "tel:+902160000000",
-  whatsappHref: "https://wa.me/902160000000",
-  email: "info@alevsan.com.tr",
+  phone: "0216 471 00 06",
+  phoneHref: "tel:+902164710006",
+  whatsapp: "+90 535 637 37 37",
+  whatsappHref: "https://wa.me/905356373737",
+  email: "alevsancncotomat@hotmail.com",
   address: "Meclis Mah. Teraziler Cad. Perpim Sanayi Sitesi No:31/B-11, Sancaktepe / İstanbul",
   mapQuery: "Perpim Sanayi Sitesi, Teraziler Cad., Meclis Mah., Sancaktepe, İstanbul",
   workingHours: "Pazartesi – Cuma: 08:00 – 18:00 · Cumartesi: 08:00 – 13:00",
